@@ -1,32 +1,13 @@
-![](https://i.imgur.com/hWB1XRO.png)
+# A personal website
 
-# Gatsby Starter Portfolio: Cara
-
-A portfolio starter for [Gatsby](https://www.gatsbyjs.org/). The target audience are designers and photographers.
-
-[Demo Website](https://portfolio-cara.netlify.com/)
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/LeKoArts/gatsby-starter-portfolio-cara)
+muhajirframe.com
 
 - TailwindCSS & Emotion
 - Gatsby v2
 - React Spring
 - Playful & Colorful One-Page website with Parallax effect
 
-Based on [gatsby-tailwind-demo](https://github.com/jlengstorf/gatsby-tailwind-demo).
-
-## Why?
-
-If you want to quickly bootstrap a design/photography portfolio or use it as a foundation for your personal site the *gatsby-starter-portfolio* are a perfect fit for you! The project's goal is to offer minimalistic and fast websites. 
-
-I hope you like my starters and create something awesome! To see some of my work you can visit my [website](https://www.lekoarts.de) or support me on [Patreon](https://www.patreon.com/lekoarts) to get some neat rewards (4K images, project files, tutorial insights).
-
-Also check out the other *gatsby-starter-portfolio*:
-- [gatsby-starter-portfolio-emma](https://github.com/LeKoArts/gatsby-starter-portfolio-emma)
-- [gatsby-starter-portfolio-emilia](https://github.com/LeKoArts/gatsby-starter-portfolio-emilia)
-- [gatsby-starter-portfolio-bella](https://github.com/LeKoArts/gatsby-starter-portfolio-bella)
-
-Check out the [Gatsby Starter Portfolio Overview](https://gatsby-starter-portfolio.netlify.com/)!
+Based on [gatsby-tailwind-demo](https://github.com/jlengstorf/gatsby-tailwind-demo) & [gatsby-starter-portfolio-cara](https://github.com/LeKoArts/gatsby-starter-portfolio-cara)
 
 ## Features
 
