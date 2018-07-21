@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-portfolio-cara",
+  "name": "muhammad-muhajir-portfolio",
   "description": "Gatsby Starter Portfolio Cara",
   "version": "1.0.0",
   "author": "LekoArts <hello@lekoarts.de>",
@@ -17,10 +17,10 @@
     "gatsby-plugin-react-helmet": "^3.0.0-beta.3",
     "gatsby-plugin-sharp": "^2.0.0-alpha.19",
     "gatsby-source-filesystem": "^2.0.0-alpha.15",
-    "gatsby-transformer-sharp": "^2.0.1-13",
+    "gatsby-transformer-remark": "^1.7.44",
+    "gatsby-transformer-sharp": "^2.1.1-beta.5",
     "postcss": "^6.0.22",
     "postcss-cli": "^5.0.0",
-    "prop-types": "^15.6.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-emotion": "^9.1.3",
@@ -36,7 +36,7 @@
     "portfolio"
   ],
   "scripts": {
-    "develop": "gatsby develop -o",
+    "develop": "gatsby develop",
     "build": "gatsby build",
     "lint": "eslint . --ext .js,.jsx --ignore-path .gitignore",
     "lint:fix": "eslint . --ext .js,.jsx --fix --ignore-path .gitignore",
@@ -52,6 +52,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.8.2",
-    "prettier": "^1.13.3"
+    "prettier": "^1.13.3",
+    "prop-types": "^15.6.2"
   }
 }
