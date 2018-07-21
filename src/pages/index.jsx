@@ -7,8 +7,8 @@ import { Parallax, ParallaxLayer } from 'react-spring'
 import 'typeface-cantata-one'
 import 'typeface-open-sans'
 
-import SEO from '../components/SEO'
 import SVG from '../components/SVG'
+import Layout from '../components/Layout'
 // import ProjectCard from '../components/ProjectCard'
 import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils'
@@ -139,8 +139,7 @@ const ContactText = styled.p`
 // `
 
 const Index = ({ data: { p1, p2, p3, p4 } }) => (
-  <React.Fragment>
-    <SEO />
+  <Layout>
     <Parallax pages={3}>
       <Divider speed={0.2} offset={0}>
         <UpDown>
@@ -322,7 +321,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
         <SVG icon="hexa" width={8} stroke={colors['grey-darkest']} left="80%" top="70%" />
       </Divider>
     </Parallax>
-  </React.Fragment>
+  </Layout>
 )
 
 export default Index
