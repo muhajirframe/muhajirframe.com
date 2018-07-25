@@ -1,6 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
+import styled from 'react-emotion'
 import Layout from '../components/Layout'
+
+const Content = styled.div`
+  ${tw('text-white')};
+`
 
 export const Blog = ({ data }) => {
   const post = data.markdownRemark
@@ -8,10 +14,14 @@ export const Blog = ({ data }) => {
     <Layout>
       <div>
         <h1 style={{ color: '#fff' }}>{post.frontmatter.title}</h1>
-        <div style={{ color: '#fff' }} dangerouslySetInnerHTML={{ __html: post.html }} />
+        <Content dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
   )
+}
+
+Blog.propTypes = {
+  data: PropTypes.object.isRequired,
 }
 
 export default Blog
