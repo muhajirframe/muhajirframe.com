@@ -173,7 +173,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
           <BigTitle>
             Hello, <br /> I'm Muhajir.
           </BigTitle>
-          <Subtitle>I'm creating web &amp; mobile app</Subtitle>
+          <Subtitle>Front End &amp; Mobile Developer</Subtitle>
         </Hero>
       </Content>
       <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={1} factor={1} />
@@ -236,7 +236,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
         <SVG icon="hexa" width={16} stroke={colors.red} left="75%" top="30%" />
         <SVG icon="hexa" width={8} stroke={colors.yellow} left="80%" top="70%" />
       </Divider> */}
-      {/* <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} /> */}
+      <Divider bg="#23262b" clipPath="polygon(0 16%, 100% 4%, 100% 82%, 0 94%)" speed={0.2} offset={3} />
       <Divider speed={0.1} offset={1}>
         <UpDown>
           <SVG icon="box" className={hidden} width={6} fill={colors.blue} left="50%" top="75%" />
