@@ -3,6 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'react-emotion'
 import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import { Parallax, ParallaxLayer } from 'react-spring'
 import 'typeface-cantata-one'
 import 'typeface-open-sans'
@@ -14,11 +15,7 @@ import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils'
 import { colors } from '../../tailwind'
 import triangle from '../images/triangle.svg'
-// import avatar from '../images/avatar.jpg'
 import '../styles/global'
-
-const avatar =
-  'https://media.licdn.com/dms/image/C5603AQHHVOBLjEwxBw/profile-displayphoto-shrink_200_200/0?e=1536796800&v=beta&t=iGh_3EhTrhytw_UfaswRiFLwEnFZCcvFWtpogO2FXKE'
 
 const Divider = styled(ParallaxLayer)`
   ${tw('absolute w-full h-full')};
@@ -102,7 +99,7 @@ const AboutHero = styled.div`
   ${tw('flex flex-col lg:flex-row items-center mt-8')};
 `
 
-const Avatar = styled.img`
+const Avatar = styled(Img)`
   ${tw('rounded-full w-32 xl:w-48 shadow-lg h-full')};
 `
 
@@ -138,7 +135,7 @@ const ContactText = styled.p`
 //   }
 // `
 
-const Index = ({ data: { p1, p2, p3, p4 } }) => (
+const Index = ({ data }) => (
   <Layout>
     <Parallax pages={3}>
       <Divider speed={0.2} offset={0}>
@@ -260,7 +257,7 @@ const Index = ({ data: { p1, p2, p3, p4 } }) => (
         <Inner>
           <Title>About</Title>
           <AboutHero>
-            <Avatar src={avatar} alt="John Doe" />
+            <Avatar resolutions={data.file.childImageSharp.fixed} />
             <AboutSub>Mostly using React.js for Front-End, and React Native for Mobile app</AboutSub>
           </AboutHero>
           <AboutDesc>
@@ -331,32 +328,12 @@ Index.propTypes = {
 }
 
 export const query = graphql`
-  query IndexQuery {
-    p1: file(relativePath: { regex: "/project_1.jpg/" }) {
+  query Avatar {
+    file(relativePath: { eq: "images/avatar.jpg" }) {
+      id
       childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-    p2: file(relativePath: { regex: "/project_2.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-    p3: file(relativePath: { regex: "/project_3.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
-        }
-      }
-    }
-    p4: file(relativePath: { regex: "/project_4.jpg/" }) {
-      childImageSharp {
-        fluid(maxWidth: 800, maxHeight: 800, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+        fixed(width: 300, height: 300) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
